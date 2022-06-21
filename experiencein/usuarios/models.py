@@ -6,4 +6,4 @@ class Perfil(models.Model):
     telefone = models.CharField(max_length=15, null=False)
     nome_empresa = models.CharField(max_length=255, null=False)
     contatos = models.ManyToManyField('self')
-    usuario = models.OneToOneField(User, on_delete=models.CASCADE, related_name="perfil")
+    usuario = models.OneToOneField(User, on_delete=models.CASCADE, related_name="usuario_perfil")
